@@ -30,3 +30,8 @@ bench_genomic_step_vector_CXXFLAGS = -Wall -std=c++17 -O2 \
                                       -I$(top_srcdir)/src \
                                       -I$(srcdir)/nanobench
 bench_genomic_step_vector_LDADD = $(top_builddir)/src/libgcat.a
+
+# Header-only bundled dependencies: not referenced by any *_SOURCES, so
+# Automake won't pick them up for `make dist` unless listed explicitly.
+EXTRA_DIST = catch2/catch_amalgamated.hpp \
+             nanobench/nanobench.h
