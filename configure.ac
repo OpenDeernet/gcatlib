@@ -1,4 +1,4 @@
-AC_INIT([gcatlib], [1.0.0], [kaliapp@cshl.edu])
+AC_INIT([gcatlib], [1.1.0], [rishvanth@gmail.com])
 AM_INIT_AUTOMAKE([-Wall -Werror foreign subdir-objects])
 AC_PROG_CXX
 AC_PROG_RANLIB
